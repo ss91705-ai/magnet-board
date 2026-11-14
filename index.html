@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>磁吸板 雙11 團購｜Smooch Home</title>
+<title>磁吸板 團購｜Smooch Home</title>
 <meta name="description" content="磁吸板兩入組團購：深木紋、淺木紋、銀色、黑色，A3 / A2。11/16（一） 截止。">
-<meta property="og:title" content="磁吸板 雙11 團購｜Smooch Home">
+<meta property="og:title" content="磁吸板 團購｜Smooch Home">
 <meta property="og:description" content="一塊板，吸住你的日常。四種框色、兩種尺寸，11/16（一） 截止。">
 <meta property="og:image" content="assets/frame-light.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%272%27 width=%2720%27 height=%2728%27 fill=%27%23d9dbdf%27 stroke=%27%23a85f88%27 stroke-width=%273%27/%3E%3Ccircle cx=%2716%27 cy=%2712%27 r=%273%27 fill=%27%23cf8fb0%27/%3E%3C/svg%3E">
@@ -202,13 +202,13 @@ footer a{color:inherit}
 </head>
 <body>
 
-<div class="top">雙 11 團購 ✦ <span id="cdLbl">截止倒數</span> <b id="cd">--</b></div>
+<div class="top">磁吸板 團購 ✦ <span id="cdLbl">截止倒數</span> <b id="cd">--</b></div>
 
 <main>
 <!-- 1 選框色 -->
 <section class="hero"><div class="wrap">
   <div class="title">
-    <small>SMOOCH HOME ✦ 11.11 GROUP BUY</small>
+    <small>SMOOCH HOME ✦ GROUP BUY</small>
     <h1>magnet<br>board</h1>
     <p>磁吸板｜一塊板，吸住你的日常 <span class="spark">✦</span></p>
   </div>
@@ -519,7 +519,7 @@ showStamp();
 const end = new Date(S.deadline).getTime();
 const d = new Date(S.deadline);
 $('#deadTxt').textContent = `${d.toLocaleDateString('zh-TW',{timeZone:'Asia/Taipei',month:'numeric',day:'numeric'})}(${d.toLocaleDateString('zh-TW',{timeZone:'Asia/Taipei',weekday:'narrow'})}) 截止。`;
-const openAt = new Date(S.openAt || '2026-11-11T00:00:00+08:00').getTime();
+const openAt = new Date(S.openAt || '2026-11-16T00:00:00+08:00').getTime();
 const openTxt = new Date(openAt).toLocaleString('zh-TW',{timeZone:'Asia/Taipei',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false});
 const isOpen = () => Date.now() >= openAt;
 function gate(){
