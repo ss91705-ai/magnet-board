@@ -1,7 +1,7 @@
 // ===== 團購設定：要改價格、截止日、連結，改這個檔案就好 =====
 window.SHOP = {
   // 截止時間（台灣時間）
-  deadline: '2026-11-13T23:59:59+08:00',
+  deadline: '2026-11-16T23:59:59+08:00',
 
   // Google 試算表的 Apps Script 網址（照 README 步驟取得後貼在引號裡）
   sheetUrl: 'https://script.google.com/macros/s/AKfycbw2Np82bx_4unZX_LPx7P7O2MP6mCb3LywD-YT89DOdH60I4-2UjuHLJkX7TN1onNVLhw/exec',
