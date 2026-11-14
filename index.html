@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>磁吸板 團購｜Smooch Home</title>
-<meta name="description" content="磁吸板兩入組團購：深木紋、淺木紋、銀色、黑色，A3 / A2。11/16（一） 截止。">
+<meta name="description" content="磁吸板團購：深木紋、淺木紋、銀色、黑色，A3 / A2，兩入組或單入。11/16(一) 收單。">
 <meta property="og:title" content="磁吸板 團購｜Smooch Home">
-<meta property="og:description" content="一塊板，吸住你的日常。四種框色、兩種尺寸，11/16（一） 截止。">
+<meta property="og:description" content="一塊板，吸住你的日常。四種框色、兩種尺寸，11/16(一) 收單。">
 <meta property="og:image" content="assets/frame-light.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%272%27 width=%2720%27 height=%2728%27 fill=%27%23d9dbdf%27 stroke=%27%23a85f88%27 stroke-width=%273%27/%3E%3Ccircle cx=%2716%27 cy=%2712%27 r=%273%27 fill=%27%23cf8fb0%27/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -136,14 +136,16 @@ h2{font-size:24px;line-height:1.35;margin-bottom:6px;text-wrap:balance}
 .pc b{font-family:var(--px);font-weight:400;font-size:15px;display:block}
 .pc s{color:var(--soft);font-size:13px}
 .pc strong{display:block;white-space:nowrap;font-size:22px;color:var(--pink-d);line-height:1.2}
+.pc em{display:block;font-style:normal;font-size:12px;color:var(--soft)}
 .pc small{display:inline-block;background:var(--ink);color:#fff;border-radius:999px;font-size:11.5px;padding:1px 9px;margin-top:4px}
 .set{border:2px dashed var(--line);border-radius:10px;padding:12px;margin-bottom:12px;background:#fff}
 .set header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-weight:700}
 .set header button{background:none;border:0;color:var(--soft);font-size:13px;text-decoration:underline;padding:4px}
-.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
 .seg button{background:#fff;border:2px solid var(--line);border-radius:8px;padding:8px;font-size:14px}
 .seg button[aria-pressed="true"]{background:var(--pink-l);border-color:var(--pink-d);font-weight:700}
-.pieces{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pieces{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:2px}
+.set .line{font-size:13px;color:var(--soft);text-align:right;margin-top:8px}
 .piece .board{padding:2px}.piece{display:grid;grid-template-columns:38px 1fr;gap:8px;align-items:start}
 .piece label{font-size:12.5px;color:var(--soft);display:block;margin-bottom:4px}
 .dots{display:flex;gap:6px;flex-wrap:wrap}
@@ -169,12 +171,6 @@ input:focus,textarea:focus,button:focus-visible,a:focus-visible{outline:3px soli
 .bank div span:first-child{color:var(--soft);font-size:13.5px;flex:none}
 .bank button{background:var(--pink-l);border:1.5px solid var(--pink-d);border-radius:6px;font-size:12.5px;padding:2px 10px;margin-left:8px}
 .steps{padding-left:20px;margin:10px 0;font-size:15px}
-.lotto{margin-top:20px;border:2px solid var(--ink);border-radius:12px;background:linear-gradient(135deg,#fff,var(--pink-l));padding:14px;display:grid;gap:10px}
-.lotto h3{font-size:18px}
-.lotto p{font-size:14.5px}
-.stamps{display:flex;gap:8px}
-.stamps i{width:38px;height:38px;border-radius:50%;border:2px dashed var(--pink-d);display:grid;place-items:center;font-style:normal;font-family:var(--px);font-size:11px;color:var(--pink-d)}
-.stamps i.on{border-style:solid;background:var(--pink-d);color:#fff;transform:rotate(-10deg)}
 .testmode{background:#fff3cd;border:1.5px solid #c9a227;border-radius:8px;padding:8px 10px;font-size:13px;margin-bottom:12px}
 [hidden]{display:none!important}
 
@@ -202,7 +198,7 @@ footer a{color:inherit}
 </head>
 <body>
 
-<div class="top">磁吸板 團購 ✦ <span id="cdLbl">截止倒數</span> <b id="cd">--</b></div>
+<div class="top">團購 ✦ <span id="cdLbl">收單倒數</span> <b id="cd">--</b></div>
 
 <main>
 <!-- 1 選框色 -->
@@ -220,7 +216,7 @@ footer a{color:inherit}
         <h2>先選一個你的框色</h2>
         <p class="lead">選好之後，整頁都會跟著你的顏色走。</p>
         <div class="swatches" id="swatches"></div>
-        <p class="hint">兩入組的兩片可以選不同顏色，下單時再決定也可以。</p>
+        <p class="hint">可買兩入組或單入，兩入組的兩片可以選不同顏色。</p>
       </div>
       <div class="photo"><img id="heroImg" src="assets/frame-silver.jpg" alt="銀色框磁吸板實拍" width="1100" height="1100"><em id="heroTag">銀色</em></div>
     </div>
@@ -324,11 +320,11 @@ footer a{color:inherit}
       <div id="formView">
         <span class="kicker">STEP 06</span>
         <h2>下單</h2>
-        <p class="lead">兩片一組販售，僅宅配，運費 <span id="shipTxt"></span> 元。<span id="deadTxt"></span></p>
+        <p class="lead">可買兩入組或單入，僅宅配，運費 <span id="shipTxt"></span> 元。<span id="deadTxt"></span></p>
         <div class="price" id="price"></div>
         <form id="form" novalidate>
           <div id="sets"></div>
-          <button type="button" class="add" id="addSet">＋ 再加一組</button>
+          <button type="button" class="add" id="addSet">＋ 再加一項</button>
           <div class="fields">
             <label>姓名<input type="text" name="name" autocomplete="name" required></label>
             <label>手機<input type="tel" name="phone" autocomplete="tel" inputmode="numeric" placeholder="09xxxxxxxx" required></label>
@@ -342,7 +338,7 @@ footer a{color:inherit}
           <p class="err" id="err" role="alert"></p>
           <button class="cta submit" id="submit">送出訂單</button>
         </form>
-        <div id="closed" hidden><p style="font-size:17px;font-weight:700">這一團已經截止了，謝謝大家。</p><p class="lead">有問題歡迎私訊 IG <span class="igTxt"></span>。</p></div>
+        <div id="closed" hidden><p style="font-size:17px;font-weight:700">這一團已經收單了，謝謝大家。</p><p class="lead">有問題歡迎私訊 IG <span class="igTxt"></span>。</p></div>
       </div>
 
       <div id="doneView" hidden>
@@ -355,14 +351,6 @@ footer a{color:inherit}
         <div class="bank" id="bank2"></div>
         <a class="cta" id="igBtn" target="_blank" rel="noopener">私訊 IG</a>
       </div>
-
-      <div class="lotto" hidden>
-        <h3>三選二，抽好禮 <span class="spark">✦</span></h3>
-        <p id="lottoTxt"></p>
-        <div class="stamps"><i id="stampMe">1</i><i>2</i></div>
-        <div id="links" style="display:grid;gap:10px"></div>
-        <a class="cta" id="hubBtn" hidden>回團購入口頁</a>
-      </div>
     </div>
   </div>
 </div></section>
@@ -374,7 +362,7 @@ footer a{color:inherit}
   <a class="cta" href="#order">下單</a>
   <div class="board mini"><i></i></div>
   <div class="now"><span>你選的框色</span><b id="nowF">銀色</b></div>
-  <div class="clock"><span id="cdLbl2">截止</span><br><span id="cd2">--</span></div>
+  <div class="clock"><span id="cdLbl2">收單</span><br><span id="cd2">--</span></div>
 </div>
 
 <script src="config.js"></script>
@@ -457,23 +445,36 @@ $$('video').forEach(v => {
 
 /* ---------- 價格與尺寸 ---------- */
 const P = S.products;
+// 單入價格：config.js 裡有 singles 就用 config 的，沒有就用這裡的
+const SG = S.singles || {
+  A3: { name: 'A3 單入', orig: 990, price: 890 },
+  A2: { name: 'A2 單入', orig: 1350, price: 1280 }
+};
+const TYPES = { set: { label: '兩入組', pcs: 2, tbl: P }, one: { label: '單入', pcs: 1, tbl: SG } };
+const item = it => TYPES[it.type].tbl[it.size];
 $('#shipTxt').textContent = S.shipping;
 $('#szA3').textContent = P.A3.size; $('#szA2').textContent = P.A2.size;
-$('#price').innerHTML = Object.keys(P).map(k => `<div class="pc"><b>${P[k].name}</b><s>原價 ${money(P[k].orig)}</s><strong>${money(P[k].price)}</strong><small>省 ${P[k].orig-P[k].price} 元</small></div>`).join('');
+$('#price').innerHTML = ['set','one'].flatMap(t => ['A3','A2'].map(k => { const x = TYPES[t].tbl[k];
+  return `<div class="pc"><b>${k} ${TYPES[t].label}</b><s>原價 ${money(x.orig)}</s><strong>${money(x.price)}</strong><small>省 ${x.orig-x.price} 元</small></div>`; })).join('');
 
 /* ---------- 訂單內容 ---------- */
-const sets = [{size:'A3', c1:frame, c2:frame, touched:false}];
+const newItem = () => ({type:'set', size:'A3', c1:frame, c2:frame, touched:false});
+const sets = [newItem()];
 const setsBox = $('#sets');
 function renderSets(){
   setsBox.innerHTML = '';
   sets.forEach((s,i) => {
     const card = el('div', {className:'set'});
-    card.innerHTML = `<header><span>第 ${i+1} 組</span>${sets.length>1?'<button type="button" data-rm>移除</button>':''}</header>
-      <div class="seg">${Object.keys(P).map(k => `<button type="button" data-size="${k}" aria-pressed="${s.size===k}">${P[k].name}<br>${money(P[k].price)}</button>`).join('')}</div>
-      <div class="pieces">${['c1','c2'].map((c,n) => `<div class="piece"><div class="board" data-f="${s[c]}"><i></i></div><div><label>第 ${n+1} 片顏色</label><div class="dots">${Object.keys(FR).map(f => `<button type="button" class="dot" data-f="${f}" data-c="${c}" aria-pressed="${s[c]===f}" aria-label="${FR[f]}" title="${FR[f]}"></button>`).join('')}</div><output>${FR[s[c]]}</output></div></div>`).join('')}</div>`;
+    const pcs = TYPES[s.type].pcs;
+    card.innerHTML = `<header><span>第 ${i+1} 項</span>${sets.length>1?'<button type="button" data-rm>移除</button>':''}</header>
+      <div class="seg">${Object.keys(TYPES).map(t => `<button type="button" data-type="${t}" aria-pressed="${s.type===t}">${TYPES[t].label}</button>`).join('')}</div>
+      <div class="seg">${['A3','A2'].map(k => `<button type="button" data-size="${k}" aria-pressed="${s.size===k}">${k}<br>${money(TYPES[s.type].tbl[k].price)}</button>`).join('')}</div>
+      <div class="pieces">${['c1','c2'].slice(0,pcs).map((c,n) => `<div class="piece"><div class="board" data-f="${s[c]}"><i></i></div><div><label>${pcs>1?`第 ${n+1} 片顏色`:'顏色'}</label><div class="dots">${Object.keys(FR).map(f => `<button type="button" class="dot" data-f="${f}" data-c="${c}" aria-pressed="${s[c]===f}" aria-label="${FR[f]}" title="${FR[f]}"></button>`).join('')}</div><output>${FR[s[c]]}</output></div></div>`).join('')}</div>
+      <p class="line">${itemLine(s)}　${money(item(s).price)}</p>`;
     card.onclick = e => {
       const b = e.target.closest('button'); if (!b) return;
-      if (b.dataset.size) s.size = b.dataset.size;
+      if (b.dataset.type) s.type = b.dataset.type;
+      else if (b.dataset.size) s.size = b.dataset.size;
       else if (b.dataset.c) { s[b.dataset.c] = b.dataset.f; s.touched = true; }
       else if ('rm' in b.dataset) sets.splice(i,1);
       renderSets();
@@ -482,12 +483,13 @@ function renderSets(){
   });
   renderSum();
 }
-$('#addSet').onclick = () => { sets.push({size:'A3', c1:frame, c2:frame, touched:false}); renderSets(); };
-function totals(){ const sub = sets.reduce((a,s) => a + P[s.size].price, 0); return {sub, total: sub + S.shipping}; }
-function itemLines(){ return sets.map(s => `${P[s.size].name}（${FR[s.c1]}＋${FR[s.c2]}）`); }
+$('#addSet').onclick = () => { sets.push(newItem()); renderSets(); };
+function totals(){ const sub = sets.reduce((a,s) => a + item(s).price, 0); return {sub, total: sub + S.shipping}; }
+function itemLine(s){ return `${s.size} ${TYPES[s.type].label}（${TYPES[s.type].pcs>1 ? FR[s.c1]+'＋'+FR[s.c2] : FR[s.c1]}）`; }
+function itemLines(){ return sets.map(itemLine); }
 function renderSum(){
   const t = totals();
-  $('#sum').innerHTML = `<div><span>商品小計（${sets.length} 組）</span><span>${money(t.sub)}</span></div><div><span>宅配運費</span><span>${money(S.shipping)}</span></div><div class="tot"><span>總計</span><span>${money(t.total)}</span></div>`;
+  $('#sum').innerHTML = `<div><span>商品小計（${sets.length} 項）</span><span>${money(t.sub)}</span></div><div><span>宅配運費</span><span>${money(S.shipping)}</span></div><div class="tot"><span>總計</span><span>${money(t.total)}</span></div>`;
 }
 renderSets();
 
@@ -502,25 +504,13 @@ $('#copy').onclick = async e => {
   catch(_) { const t = el('textarea',{value:S.bank.account}); document.body.append(t); t.select(); document.execCommand('copy'); t.remove(); }
   e.target.textContent = '已複製';
 };
-$('#lottoTxt').textContent = S.lottery + '（資格以實際訂單的 IG 帳號＋手機為準）';
-const LINKS = S.links || [
-  {name:'航空收納箱組合', url:'https://ss91705-ai.github.io/airline-box/'},
-  {name:'POINTITI 聖誕禮盒預購', url:'https://ss91705-ai.github.io/pointiti-xmas/'}
-];
-LINKS.forEach(l => { const a = el('a', {className:'cta', href:l.url}); a.textContent = l.name + ' →'; a.style.background = '#fff'; a.style.color = 'var(--ink)'; $('#links').append(a); });
-if (S.hubUrl) { $('#hubBtn').href = S.hubUrl; $('#hubBtn').hidden = false; }
-const STAMP = 'smooch1111_stamps';
-function stamps(){ try { return JSON.parse(localStorage.getItem(STAMP) || '[]'); } catch(_) { return []; } }
-function showStamp(){ if (stamps().includes('magnet')) { $('#stampMe').classList.add('on'); $('#stampMe').textContent = 'OK'; } }
-showStamp();
-
 /* ---------- 倒數 ---------- */
 const end = new Date(S.deadline).getTime();
 const d = new Date(S.deadline);
-$('#deadTxt').textContent = `${d.toLocaleDateString('zh-TW',{timeZone:'Asia/Taipei',month:'numeric',day:'numeric'})}(${d.toLocaleDateString('zh-TW',{timeZone:'Asia/Taipei',weekday:'narrow'})}) 截止。`;
+$('#deadTxt').textContent = `${d.toLocaleDateString('zh-TW',{timeZone:'Asia/Taipei',month:'numeric',day:'numeric'})}(${d.toLocaleDateString('zh-TW',{timeZone:'Asia/Taipei',weekday:'narrow'})}) 收單。`;
 function tick(){
   const ms = end - Date.now();
-  if (ms <= 0) { $('#cd').textContent = $('#cd2').textContent = '已截止'; $('#form').hidden = true; $('#price').hidden = true; $('#closed').hidden = false; return; }
+  if (ms <= 0) { $('#cd').textContent = $('#cd2').textContent = '已收單'; $('#form').hidden = true; $('#price').hidden = true; $('#closed').hidden = false; return; }
   const dd = Math.floor(ms/864e5), hh = Math.floor(ms%864e5/36e5), mm = Math.floor(ms%36e5/6e4), ss = Math.floor(ms%6e4/1e3);
   const p = n => String(n).padStart(2,'0');
   $('#cd').textContent = (dd ? `${dd}天 ` : '') + `${p(hh)}:${p(mm)}:${p(ss)}`;
@@ -557,7 +547,6 @@ form.addEventListener('submit', async e => {
   $('#doneItems').textContent = itemLines().map((l,i) => `${i+1}. ${l}`).join('\n') + `\n宅配運費 ${money(S.shipping)}`;
   $('#doneTotal').textContent = money(t.total);
   $('#formView').hidden = true; $('#doneView').hidden = false;
-  if (S.sheetUrl) { try { const s = stamps(); if (!s.includes('magnet')) { s.push('magnet'); localStorage.setItem(STAMP, JSON.stringify(s)); } } catch(_) {} showStamp(); }
   $('#order').scrollIntoView();
 });
 })();
